@@ -1,0 +1,141 @@
+/*! Custom CSS added for the fp slider */
+
+body{
+    font-family: arial,helvetica;
+    color: rgba(255,255,255,0.75);
+}
+
+h1{
+    font-size: 3em;
+    font-family: arial,helvetica;
+    font-weight: normal;
+    color: #fff;
+    margin:0;
+    padding:0;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+
+p, li{
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+}
+
+/* Where the slide is split vertically into left and right halves.*/
+.half{
+    display: inline-block;
+    width: 40%;
+}
+
+.half p, .half li {
+    width: 100%;
+}
+
+/* Fixed header and footer.
+* --------------------------------------- */
+#header {
+    position:fixed;
+    height: 50px;
+    line-height: 50px;
+    display:inline-block;
+    width: 100%;
+    background: #212;
+    z-index:9;
+    color: #f2f2f2;
+    padding: 0 0 0 0;
+    top:0px;
+    left: 0px;
+}
+
+#header:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;   /*See 2 lines added to #menu for vertically centering*/
+  margin-right: -0.25em;    /* Adjusts for spacing */
+}
+
+#bedSplash{
+    background-image: url(file:///C:/Users/Rick/Pictures/Furniture/Rod+Moni%20Leas/100_1744.jpg);
+    background-size: cover;
+
+}
+
+/* Top menu
+* --------------------------------------- */
+
+#menu li {
+    display:inline-block;
+    color: #000;
+    background:#fff;
+    background: rgba(255,255,255, 0.5);
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    -webkit-margin-left: 10px;
+            margin-left: 10px;
+}
+#menu li.active,
+#menu li.active:hover{
+    background:#666;
+    background: rgba(0,0,0, 0.5);
+    color: #fff;
+}
+#menu li a{
+    text-decoration:none;
+    color: #000;
+}
+#menu li.active a:hover{
+    color: #000;
+}
+#menu li:hover{
+    background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+    padding: 0px 15px;
+    display:block;
+}
+#menu li.active a{
+    color: #fff;
+}
+#menu ul {
+    list-style: none;
+}
+#menu {
+    display: inline-block;      /*These 2 lines center this content vertically in the #header*/
+    vertical-align: middle;
+    margin: 0px;
+    padding: 0px;
+    line-height: 36px;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu {
+    bottom: 80px;
+}
+#infoMenu li a {
+    color: #fff;
+    z-index: 999;
+}
+
+
+
+    /*From examples.css*/
+
+.twitter-share-button{
+    position: fixed;
+    z-index: 99;
+    right: 149px;
+    top: 9px;
+}
